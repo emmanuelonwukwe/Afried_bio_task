@@ -58,7 +58,7 @@ html, body{
 }
 
 .bg-purple{
-    background: url(../images/bg_purple.png);
+    background-color: black;
     background-repeat: repeat-x;
     background-size: cover;
     background-position: left top;
@@ -69,6 +69,24 @@ html, body{
 
 .custom-navbar{
     padding-top: 15px;
+    position: relative;
+    z-index: 200;
+}
+
+.custom-navbar input{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.custom-navbar button{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
 }
 
 .brand-logo{
@@ -267,9 +285,41 @@ li a:hover {
     animation: glow-star 2s infinite ease-in-out alternate 9s;
 }
 
+.stars .central-body .message{
+    position: relative;
+    z-index: 200 !important;
+    color: white;
+}
+
+@media only screen and (max-width: 339px){
+    .custom-navbar input{
+        width: 150px;
+        height: 50px;
+    }
+    .custom-navbar button{
+        width: 80px;
+        height: 50px;
+        background-color: green;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 445px) and (max-width: 547px){
+    .custom-navbar input{
+        width: 150px;
+        height: 50px;
+    }
+    .custom-navbar button{
+        width: 80px;
+        height: 50px;
+        background-color: green;
+        color: white;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .navbar-links{
-        display: none;
+        display: block;
     }
     
     .custom-navbar{
