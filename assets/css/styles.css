@@ -37,7 +37,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     text-align: justify;
-    text-justify: auto;
+    text-justify: none;
 }
 
 .profile-container .profile-data .profile-photo img{
@@ -126,10 +126,10 @@ body{
     to {opacity: 0.5; background-color: green;}
  }
 @-moz-keyframes glow {
-    from { opacity: 1.0;}
-    to {opacity: 0.5;}
+    from { opacity: 1.0; background-color: blue;}
+    to {opacity: 0.5; background-color: green;}
  }
 @-webkit-keyframes glow {
-    from { opacity: 1.0;}
-    to {opacity: 0.5;}
+    from { opacity: 1.0; background-color: blue;}
+    to {opacity: 0.5; background-color: green;}
  }
