@@ -2,6 +2,11 @@
 *{
     box-sizing: border-box;
 }
+
+body{
+    background-image: url(../images/bg_purple.png);
+}
+
 .profile-container{
     background-color: black;
     text-align: center;
