@@ -1,0 +1,128 @@
+
+*{
+    box-sizing: border-box;
+}
+.profile-container{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.profile-container .profile-data{
+    background: linear-gradient(to bottom, blue, skyblue, blue);
+    background-image: url(../images/overlay_stars.svg);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.profile-container .profile-data h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+    font-size: 22px;
+}
+
+.profile-container .profile-data p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.profile-container .profile-data .profile-photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-transition: all ease;
+    -moz-transition: all ease;
+    -ms-transition: all ease;
+    -o-transition: all ease;
+    transition: all ease;
+}
+
+.profile-container .profile-data .profile-photo img:hover{
+    opacity: 0.6;
+}
+
+.profile-container .profile-data .image-button-area button{
+    width: 300px;
+    height: 200px;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.profile-container .profile-data button{
+    border: 2px solid transparent;
+    border-radius: 30px;
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: all ease;
+    -moz-transition: all ease;
+    -ms-transition: all ease;
+    -o-transition: all ease;
+    transition: all ease;
+    cursor: pointer ;
+}
+
+.profile-container .profile-data button:hover{
+    opacity: 0.5;
+}
+
+.profile-container .profile-data button:not(.image-button){
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+    background:radial-gradient( green, white, black);
+    background: -moz-radial-gradient( green, white, black);
+    background: -webkit-radial-gradient(blue, white, black);
+}
+
+.profile-container .profile-data .social-area{
+    margin-top: 100px;
+}
+
+.profile-container .profile-data .social-area a:nth-child(2){
+    margin: 30px;
+}
+
+.profile-container .profile-data .social-area img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 556px){
+    .profile-container .profile-data .image-button-area button{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 647px){
+    .profile-container .profile-data button:not(.image-button){
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }
+}
+
+@keyframes glow {
+    from { opacity: 1.0; background-color: blue;}
+    to {opacity: 0.5; background-color: green;}
+ }
+@-moz-keyframes glow {
+    from { opacity: 1.0;}
+    to {opacity: 0.5;}
+ }
+@-webkit-keyframes glow {
+    from { opacity: 1.0;}
+    to {opacity: 0.5;}
+ }
