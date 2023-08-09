@@ -114,6 +114,13 @@ body{
     border-radius: 50px;
 }
 
+@media  screen and (min-width: 662px) {
+    .profile-container{
+        width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (max-width: 556px){
     .profile-container .profile-data .image-button-area button{
         width: 200px;
