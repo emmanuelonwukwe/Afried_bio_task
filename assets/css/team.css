@@ -28,7 +28,16 @@ body{
     flex: 1;
     border-radius: 10px;
     background: black;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
   }
+
+  .item:hover{
+    background:red;
+    opacity: 1.0;
+  }
+
+
 
   .item img {
     max-width: 100%;
