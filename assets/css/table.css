@@ -1,0 +1,93 @@
+body{
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 0;
+    background-image: url(../images/bg_purple.png);
+}
+
+
+div.table-responsive{
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    animation-name: glow;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+}
+
+table a{
+    text-decoration: none;
+    color: skyblue;
+}
+
+table caption{
+    color: wheat;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+table thead tr th{
+    background-color: orange;
+}
+
+
+table tbody{
+    color: white;
+}
+
+table .about-area{
+    background-color: rebeccapurple;
+    height: 100px;
+    width: 300px;
+    padding: 5px;
+    text-align: justify;
+    overflow-y: auto;
+
+}
+
+table tbody tr:nth-child(odd) td{
+    background-color: grey;
+}
+
+table tbody tr td{
+    padding: 10px;
+}
+table tbody tr td img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    transition: all 2s ease;
+}
+
+table tbody tr td img:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+table tbody tr{
+    transition: all 1s ease;
+}
+
+table tbody tr:hover td{
+    background-color: orange !important;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1.0;
+    }
+}

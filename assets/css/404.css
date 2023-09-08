@@ -78,15 +78,17 @@ html, body{
     margin-left: 20px;
     padding-left: 10px;
     width: 200px;
-    height: 50px;
+    height: 30px;
     border: 2px solid black;
     border-radius: 10px;
 }
 .custom-navbar button{
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 30px;
     background-color: green;
     color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .brand-logo{
@@ -294,11 +296,11 @@ li a:hover {
 @media only screen and (max-width: 339px){
     .custom-navbar input{
         width: 150px;
-        height: 50px;
+        height: 30px;
     }
     .custom-navbar button{
         width: 80px;
-        height: 50px;
+        height: 30px;
         background-color: green;
         color: white;
     }
@@ -307,17 +309,20 @@ li a:hover {
 @media only screen and (min-width: 445px) and (max-width: 547px){
     .custom-navbar input{
         width: 150px;
-        height: 50px;
+        height: 30px;
     }
     .custom-navbar button{
         width: 80px;
-        height: 50px;
+        height: 30px;
         background-color: green;
         color: white;
     }
 }
 
 @media only screen and (max-width: 600px){
+    form{
+        padding: 20px
+    };
     .navbar-links{
         display: block;
     }
